@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SyntrexStudio | Builder Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="loading">
+    <div id="sparkles" aria-hidden="true"></div>
+    <div id="pageLoader" class="page-loader" aria-hidden="true">
+      <div class="loader-panel">
+        <div class="loader-spinner" aria-hidden="true">
+          <img src="assets/logo.png" alt="" class="loader-logo" width="64" height="64" />
+        </div>
+        <p class="loader-brand">SyntrexStudio</p>
+        <p class="loader-sub">Preparing your experience</p>
+        <div class="loader-track" aria-hidden="true">
+          <div class="loader-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="index.html#about">About</a>
+          <a href="builds.html">Builds</a>
+          <a href="index.html#ratings">Ratings</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="apply.html">Apply</a>
+        </nav>
+        <div class="brand">
+          <img src="assets/logo.png" alt="SyntrexStudio logo" class="brand-logo" />
+          <div>
+            <p class="tag">SyntrexStudio Recruitment</p>
+            <h1>Builder Application</h1>
+          </div>
+        </div>
+        <p class="subtitle subtitle-animated">
+          Apply to join SyntrexStudio and help craft premium gameplay experiences for communities worldwide.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="apply" class="card">
+        <h2>Application Form</h2>
+        <p class="info">
+          Please fill in every field with care. We review each application manually and contact selected applicants by
+          email.
+        </p>
+
+        <form id="builderForm" class="form">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" required />
+
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" min="13" max="100" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="discord">Discord Username</label>
+          <input id="discord" name="discord" type="text" placeholder="name#0001 or @name" required />
+
+          <label for="timezone">Timezone</label>
+          <input id="timezone" name="timezone" type="text" placeholder="UTC+1" required />
+
+          <label for="experience">Building Experience</label>
+          <textarea id="experience" name="experience" rows="4" required></textarea>
+
+          <label for="portfolio">Portfolio / Examples Link</label>
+          <input id="portfolio" name="portfolio" type="url" placeholder="https://..." required />
+
+          <label for="availability">Availability (hours per week)</label>
+          <input id="availability" name="availability" type="text" placeholder="10-15 hours" required />
+
+          <label for="motivation">Why do you want to join SyntrexStudio?</label>
+          <textarea id="motivation" name="motivation" rows="5" minlength="30" required></textarea>
+
+          <button id="submitButton" type="submit">Submit Application</button>
+        </form>
+
+        <p id="statusMessage" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SyntrexStudio. All rights reserved.</p>
+    </footer>
+
+    <a href="admin.html" class="admin-corner-link" aria-label="Open staff admin panel">Admin</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin — SyntrexStudio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin-body">
+    <div id="sparkles" aria-hidden="true"></div>
+    <header class="admin-top">
+      <a class="admin-back" href="/">← Official website</a>
+      <h1>Applications & Vouches</h1>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-hero">
+        <p class="admin-kicker">Staff Dashboard</p>
+        <p class="admin-note">Manage builder applications and moderate public vouches.</p>
+      </section>
+
+      <form id="loginForm" class="admin-login-form">
+        <input id="user" type="text" autocomplete="username" placeholder="Username" required />
+        <input id="pass" type="password" autocomplete="current-password" placeholder="Password" required />
+        <button type="submit">Access Dashboard</button>
+      </form>
+      <p id="msg" class="admin-msg" role="status"></p>
+
+      <div id="adminGrid" class="admin-grid is-hidden">
+        <section class="admin-section">
+          <h2>Applications</h2>
+          <div id="list" class="admin-list"></div>
+        </section>
+
+        <section class="admin-section">
+          <h2>Vouch Moderation</h2>
+          <p class="admin-note">Only owner account can delete bad vouches.</p>
+          <div id="vouchList" class="admin-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
