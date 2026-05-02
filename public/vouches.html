@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SyntrexStudio | All Vouches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="loading">
+    <div id="sparkles" aria-hidden="true"></div>
+    <div id="pageLoader" class="page-loader" aria-hidden="true">
+      <div class="loader-panel">
+        <div class="loader-spinner" aria-hidden="true">
+          <img src="assets/logo.png" alt="" class="loader-logo" width="64" height="64" />
+        </div>
+        <p class="loader-brand">SyntrexStudio</p>
+        <p class="loader-sub">Preparing your experience</p>
+        <div class="loader-track" aria-hidden="true">
+          <div class="loader-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="index.html#about">About</a>
+          <a href="builds.html">Builds</a>
+          <a href="index.html#ratings">Ratings</a>
+          <a href="index.html#vouch">Vouch</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="apply.html">Apply</a>
+        </nav>
+        <div class="brand">
+          <img src="assets/logo.png" alt="SyntrexStudio logo" class="brand-logo" />
+          <div>
+            <p class="tag">SyntrexStudio</p>
+            <h1>All Vouches</h1>
+          </div>
+        </div>
+        <p class="subtitle subtitle-animated">
+          Browse every public vouch shared by clients and partners who worked with SyntrexStudio.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="vouch" class="card" data-show-all="true">
+        <h2>Community Vouches</h2>
+        <p class="info">
+          These are all public vouches submitted for SyntrexStudio. New vouches will appear here automatically.
+        </p>
+        <p id="vouchSummary" class="vouch-summary">Loading vouches...</p>
+        <div id="vouchList" class="review-grid vouch-list" aria-live="polite"></div>
+        <a href="index.html#vouch" class="vouch-more-link">Back to vouch section</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SyntrexStudio. All rights reserved.</p>
+    </footer>
+
+    <a href="admin.html" class="admin-corner-link" aria-label="Open staff admin panel">Admin</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
